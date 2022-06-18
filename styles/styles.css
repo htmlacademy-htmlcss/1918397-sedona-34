@@ -1,3 +1,150 @@
-body {
-  background-color: lightblue;
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  color: #000;
+  background-color: #fff;
+}
+
+h1{
+  font-size:60px;
+  line-height: 78px;
+}
+
+h2{
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h3{
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h4{
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.page-header{
+  color:#000;
+  background-color: #fff;
+}
+
+.navigation-link{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-index{
+  color:#000;
+  background-color: #fff;
+  background-image: url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.button{
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.city-description{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.small-city-description{
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.advantages-list{
+  text-align: center;
+}
+
+.condition-title, .advantage-title{
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.first-advantage, .second-advantage{
+  background-color:#82B3D3;
+  color: #fff;
+}
+
+.third-advantage, .fifth-advantage, .first-condition, .third-condition{
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #333333;
+}
+
+.fourth-advantage{
+  background-color:rgba(131, 179, 211, 0.2);
+  color: #333333;
+}
+
+.second-condition{
+  background-color: #fff;
+  color: #333333
+}
+
+.hotel-search{
+  text-align: center;
+}
+
+.newsletter{
+  text-align: center;
+  background-color: black;
+  color: white;
+  background-image: url("../images/newsletter-background.jpg");
+}
+
+.page-footer{
+  background-color: white;
+  color: black;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.footer-phone-link{
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.page-footer a{
+  color: black;
+  text-decoration: none;
 }
