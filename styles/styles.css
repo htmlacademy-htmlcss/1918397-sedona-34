@@ -233,15 +233,30 @@ body{
   line-height: inherit;
 }
 
+.page-footer-container{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-social-list-container{
+  width: 142px;
+  margin-left: 70px;
+}
+
 .footer-phone-link{
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
+
 }
 
 .page-footer a{
   color: black;
   text-decoration: none;
+  margin-right: 70px;
+
 }
 
 .inner-header-title{
