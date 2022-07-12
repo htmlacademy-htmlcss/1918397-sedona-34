@@ -14,7 +14,16 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+
+}
+
 body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -23,12 +32,25 @@ body{
   background-color: #fff;
 }
 
+.main-container{
+  flex-grow: 1;
+}
+
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .page-header{
   color:#000;
   background-color: #fff;
 }
 
+.navigation{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .navigation-link{
   font-size: 20px;
@@ -37,6 +59,21 @@ body{
   text-transform: capitalize;
   text-decoration: none;
   color: inherit;
+}
+
+.navigation-list{
+  max-width: 520px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user{
+  max-width: 320px;
+  margin-left: auto;
+}
+
+.navigation-logo{
+  margin-right: 30px;
 }
 
 .button {
@@ -66,6 +103,11 @@ body{
   background-size: 100% auto;
 }
 
+.main-logo{
+  display: block;
+  margin: 0 auto;
+}
+
 .city-description{
   font-size: 30px;
   line-height: 36px;
@@ -82,6 +124,30 @@ body{
 .advantages-list{
   text-align: center;
   background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.advantage{
+  width: 400px;
+  padding: 85px;
+}
+
+.advantages-conditions-container > li{
+  width: 400px;
+  padding: 85px;
+}
+
+.advantages-list > img{
+  width: 800px;
+}
+
+.picture-advantages-container{
+  display: flex;
+}
+
+.advantages-conditions-container{
+  display: flex;
 }
 
 .advantages-title{
@@ -96,6 +162,11 @@ body{
   line-height: 26px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.conditions-list{
+  margin: 0;
+  padding: 0;
 }
 
 .first-advantage, .second-advantage{
@@ -132,8 +203,6 @@ body{
   color: 333333;
 }
 
-
-
 .newsletter{
   text-align: center;
   background-color: white;
@@ -150,7 +219,6 @@ body{
 
 .newsletter-button, .submit-button{
   background-color: #82B3D3;
-
 }
 
 .page-footer{
@@ -160,10 +228,22 @@ body{
   line-height: inherit;
 }
 
+.page-footer-container{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-social-list-container{
+  width: 142px;
+}
+
 .footer-phone-link{
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
+
 }
 
 .page-footer a{
@@ -171,9 +251,28 @@ body{
   text-decoration: none;
 }
 
+.inner-header{
+  width: 495px;
+  margin-right: auto;
+}
+
+.catalog{
+  display: flex; 
+  flex-direction: column;
+}
+
+.inner-footer{
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 .inner-header-title{
   font-size: 60px;
   line-height: 78px;
+  padding: 0;
+  margin: 0;
 }
 
 .filter-container{
@@ -182,14 +281,20 @@ body{
   background-image: url("../images/filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding: 0 70px;
 }
 
-.breadcrumbs{
-  color: white;
+.filter-group{
+  width: 150px;
 }
 
-.breadcrumbs-link{
-  color: inherit;
+.infra-filter{
+  margin-right: 70px;
+}
+
+.filter-list{
+  padding: 0;
+  margin: 0;
 }
 
 .filter-title{
@@ -199,13 +304,47 @@ body{
   text-transform: capitalize;
 }
 
+.filter-content-container{
+  width: 1060;
+}
+
+.filter-buttons{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.amount-filter{
+  color: 333333;
+  background-color: white;
+}
+
+.breadcrumbs{
+  color: white;
+}
+
+.breadcrumbs-list{
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-link{
+  color: inherit;
+}
+
+.top-sorting-container{
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .products-found{
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
-
 
 .product-title{
   font-size: 24px;
@@ -235,6 +374,11 @@ body{
   font-weight: 400;
 }
 
+.pagination{
+  margin: 0;
+  padding: 0;
+}
+
 .pagination-link{
   background-color: #82B3D3;
   color: white;
@@ -247,7 +391,3 @@ body{
   color: black;
 }
 
-.amount-filter{
-  color: 333333;
-  background-color: white;
-}
